@@ -50,10 +50,6 @@ public class AverageGradeComparer<T> : IComparer<STUDENT<T>> where T : IComparab
     }
 }
 
-class Program
-{
-    static void Main()
-    {
         // Массив из 10 студентов
         STUDENT<string>[] students = new STUDENT<string>[10];
 
@@ -107,5 +103,3 @@ class Program
         {
             Console.WriteLine($"{student.FullName}, средний балл: {student.GetAverageGrade():F2}");
         }
-    }
-}
